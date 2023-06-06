@@ -19,7 +19,7 @@ Primary skills displayed:
 - Lists
 - Random Library
 - User Input & Output
-- Learning a bit of Markdown :)
+- Learning a bit of Markdown :smiley:
 
 
 ![About Code In Place](https://github.com/JodieMullins/cip/assets/131491284/564f4e5a-29fe-44ad-bb77-050e41f9c957)
