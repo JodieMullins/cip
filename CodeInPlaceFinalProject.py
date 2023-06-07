@@ -8,6 +8,8 @@ Nesting statements
 Random libary
 Lists
 User Input & Output
+For Loop
+i and range 
 """
 import random
 
@@ -30,7 +32,8 @@ print("") #space
 
 print("SECURE LOG-IN PAGE ")
 print("+++++++++++++++++++++++++++++")
-print("HINT: Karel_Robot PW: R0b01!")
+print("") #space
+print("") #space
 username = input("USERNAME > ")
 password = input("PASSWORD > ")
 
@@ -39,18 +42,26 @@ print("")
 print("")
 print("")
 
+
+
 if username == "Karel_Robot" and password == "R0b01!":
   print("Welcome, Karel!")
   print("")
   print("")
   print("")
-  print("Glad your human could read the Captcha today!")
+  print("Glad your human could read the Captcha today!") 
+  print("") #space
+  print("") #space
+  print("") #space
 elif username == "CIP" and password == "Cod3inPlace":
   print("Welcome, wonderful volunteers of knowledge and wisdom!")
   print("")
   print("")  
   print("")
-  print("You're doing great work for teaching these wannabes!")
+  print("You're doing great work!")
+  print("") #space
+  print("") #space
+  print("") #space
 
 elif username == "JoMuffins" and password == "Mull!n$":
   print("Welcome, Jodie")
@@ -58,28 +69,36 @@ elif username == "JoMuffins" and password == "Mull!n$":
   print("")
   print("")
   print("Another day of coding, eh?")
+  print("") #space
+  print("") #space
+  print("") #space
 else:
-  print("Well, you're a problem.")
+  print("Welcome", username, "\b! May the days be kind to you!")
   print("") #space
   print("") #space
+  
+print("Let's take a moment to take some deep breaths and calm our nervous system a bit, shall we?")
+# this will print a list of 1-10 so the user can take a moment to count breaths.
+count = 10
+for i in range(count):
+  print(1 + i)  
+
+print("") #space
+print("") #space
+print("") #space
+print("") #space
 
 
+name_input = input("What's your preferred name? ")
 print("") #space
-print("") #space
-print("") #space
-print("") #space
-
-
-name_user = input("What's your preferred name? ")
-print("") #space
-print("Welcome,", name_user,"\b! We are very thankful you've joined us for this time to supply you with a vote of confidence.")
+print("Welcome,", name_input,"\b! We are very thankful you've joined us for this time to supply you with a vote of confidence.")
 
 print("") #space
 print("") #space
 
 print("Strength, Humor, Courage, Business, Science") 
 
-user_goal = input("From the list, what kind of inspiration are you looking for? ")
+user_goal = input("From the given list, what kind of inspiration are you looking for? ")
 
 print("") #space
 print("") #space
@@ -89,6 +108,14 @@ print("") #space
 print("") #space
 
 if user_goal == "Strength" or user_goal == "strength":
+  """
+  By including the "or" combinator in each exclusive if statement, I've allowed the program to be less case-sensitive for the user.
+  
+  Nested within this if statement, a random operator is used below to select a random quote from the the lists above, with a preference for a specific list as indicated by the user's input. A single quote will then display for the user.
+  
+  Both of these statements continue in trend below until the else statement.
+  """
+
   print(random.choice(strength_quotes))
   print("") #space
   print("") #space
@@ -115,7 +142,8 @@ elif user_goal == "science" or user_goal == "Science":
   print("") #space
 
 
-else:
+else:   #if the user does not put in any valid topic from the lists, this quote will still display for them
   print("Experience has shown, and a true philosophy will always show, that a vast, perhaps the larger portion of the truth arises from the seemingly irrelevant. -Edgar Allan Poe")
+  print("") #space
   print("") #space
   print("") #space
