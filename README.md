@@ -19,6 +19,8 @@ Primary skills displayed:
 - Lists
 - Random Library
 - User Input & Output
+- For Loop
+- i and range
 - Learning a bit of Markdown :smiley:
 
 
