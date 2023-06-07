@@ -22,7 +22,7 @@ humor_quotes = ["A well-developed sense of humor is the pole that adds balance t
 
 courage_quotes = ["The secret to happiness is freedom... And the secret to freedom is courage. -Thucydides", "Only those who will risk going too far can possibly find out how far one can go. -T. S. Eliot", "Courage is the most important of all the virtues, because without courage you can't practice any other virtue consistently. You can practice any virtue erratically, but nothing consistently without courage. -Maya Angelou", "The opposite of courage in our society is not cowardice, it is conformity. -Rollo May", "Boldness be my friend. -William Shakespeare"]
 
-business_quotes = ["It's easy to make a buck. It's a lot tougher to make a difference. -Tom Brokaw", "A business that makes nothing but money is a poor business. -Henry Ford", "Just because something doesn't do what you planned it to do doesn't mean it's useless. -Thomas A. Edison", "Failure doesn't mean you are a failure it just means you haven't succeeded yet.-Robert H. Schuller"]
+business_quotes = ["It's easy to make a buck. It's a lot tougher to make a difference. -Tom Brokaw", "A business that makes nothing but money is a poor business. -Henry Ford", "Just because something doesn't do what you planned it to do doesn't mean it's useless. -Thomas A. Edison", "Failure doesn't mean you are a failure it just means you haven't succeeded yet. -Robert H. Schuller"]
 
 science_quotes = ["Scientific research is one of the most exciting and rewarding of occupations. -Frederick Sanger", "Research is what I'm doing when I don't know what I'm doing. -Wernher von Braun", "We can't solve problems by using the same kind of thinking we used when we created them. -Albert Einstein", "Science may have found a cure for most evils; but it has found no remedy for the worst of them all - the apathy of human beings. -Helen Keller"]
 
@@ -30,7 +30,7 @@ print("") #space
 print("") #space
 print("") #space
 
-print("SECURE LOG-IN PAGE ")
+print("INSPIRATIONAL LOG-IN PAGE ")
 print("+++++++++++++++++++++++++++++")
 print("") #space
 print("") #space
@@ -78,10 +78,20 @@ else:
   print("") #space
   
 print("Let's take a moment to take some deep breaths and calm our nervous system a bit, shall we?")
+print("") #space
 # this will print a list of 1-10 so the user can take a moment to count breaths.
 count = 10
 for i in range(count):
-  print(1 + i)  
+  print(1 + i, "and breathe")
+  print("") #space
+
+
+print("") #space
+print("") #space
+
+#This is to pause the program until the user is ready to move forward.
+print("When you are ready, click enter below this line to continue.")
+input()
 
 print("") #space
 print("") #space
@@ -113,7 +123,7 @@ if user_goal == "Strength" or user_goal == "strength":
   
   Nested within this if statement, a random operator is used below to select a random quote from the the lists above, with a preference for a specific list as indicated by the user's input. A single quote will then display for the user.
   
-  Both of these statements continue in trend below until the else statement.
+  Both of these statements continue in trend until the else statement.
   """
 
   print(random.choice(strength_quotes))
