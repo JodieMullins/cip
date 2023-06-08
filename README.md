@@ -17,6 +17,7 @@ Primary skills displayed:
 - Print
 - If, Else, Elif Statements
 - Nesting Statements
+- Variables
 - Lists
 - Random Library
 - User Input & Output
