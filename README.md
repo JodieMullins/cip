@@ -1,9 +1,7 @@
 # Code In Place Final Project
 
-### Uploaded within this repository is my submission of a final project for Stanford's Code In Place short course.
-
 From late April to early June, we've helped Karel solve several challenges. We've created functions that can double numbers and lists; we've drawn flags and created our own mad libs games. 
-There was even our own Joke Bot and forum quilt. 
+There was even our own Joke Bot and forum quilt. Now it has come time in Stanford's Code In Place short course to create a final project, presented here in this repository. 
 
 ------
 
