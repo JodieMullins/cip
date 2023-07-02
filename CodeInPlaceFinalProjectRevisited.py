@@ -109,11 +109,7 @@ print("") #space
 
 print("Strength, Humor, Courage, Business, Science") 
 
-#  I added the python feature '.lower' in order to force more control over the user's input to clean up my 'if' statements below.
-user_goal = input("From the given list, what kind of inspiration are you looking for? ").lower
-
-# I attempted to use the python feature '.strip' as well, but Visual Code Studio's debugger is not recognizing this feature of python currently. 
-# To best prevent bugs, I have not accounted for white space errors that may occur using '.strip'  because the 'else' statement serves as a somewhat catch-all.
+user_goal = input("From the given list, what kind of inspiration are you looking for? ").lower.strip("")
 
 
 print("") #space
@@ -123,9 +119,9 @@ print("") #space
 print("") #space
 print("") #space
 
-if user_goal == "strength":
+if user_goal == "Strength" or user_goal == "strength":
   """
-  By including the "or" combinator in each exclusive if statement, I've allowed the program to be less case-sensitive for the user. 
+  By including the "or" combinator in each exclusive if statement, I've allowed the program to be less case-sensitive for the user.
   
   Nested within this if statement, a random operator is used below to select a random quote from the the lists above, with a preference for a specific list as indicated by the user's input. A single quote will then display for the user.
   
@@ -136,23 +132,23 @@ if user_goal == "strength":
   print("") #space
   print("") #space
 
-elif user_goal == "humor":
+elif user_goal == "humor" or user_goal == "Humor":
   print(random.choice(humor_quotes))
   print("") #space
   print("") #space
 
-elif user_goal == "courage":
+elif user_goal == "Courage" or user_goal == "courage":
   print(random.choice(courage_quotes))
   print("") #space
   print("") #space
 
-elif user_goal == "business":
+elif user_goal == "business" or user_goal == "Business":
   print(random.choice(business_quotes))
   print("") #space
   print("") #space
 
 
-elif user_goal == "science":
+elif user_goal == "science" or user_goal == "Science":
   print(random.choice(science_quotes))
   print("") #space
   print("") #space
